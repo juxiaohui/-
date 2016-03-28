@@ -1,0 +1,65 @@
+//
+//  JXHNews.pch
+//  XHNewsDemo
+//
+//  Created by iosdev on 16/1/11.
+//  Copyright © 2016年 juxiaohui. All rights reserved.
+//
+
+
+//**************设置SDK适用的版本*****************
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+
+#endif
+
+
+//**************调试和发布版本之间的设置*****************
+#ifdef DEBUG //调试模式--模拟器
+
+#define JXHLog(...) NSLog(__VA_ARGS__)  //公司自定义打印
+
+#else //发布模式 RELEASE--真机
+
+#define JXHLog(...)  //发布版本下取消自定义打印，自定义打印不起作用
+
+#endif
+
+//**************所有objective-c文件共享的头文件*****************
+
+#ifdef __OBJC__  //所有objective-c文件共享的头文件
+#import "JXHNews.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIColor+expanded.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "JXHNetEngine.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "MWPhotoBrowser.h"
+#import "MBProgressHUD+XMG.h"
+#import "FMGVideoPlayView.h"
+#import "CFDanmakuView.h"    
+#import <Masonry/Masonry.h>
+#import "ZFPlayer.h"
+
+
+typedef enum{
+    topViewClick = 0,
+    FromTopToTop = 1,
+    FromTopToTopLast = 2,
+    FromTopToBottomHead = 3,
+    FromBottomToTopLast = 4
+} animateType;
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* JXHNews_pch */
