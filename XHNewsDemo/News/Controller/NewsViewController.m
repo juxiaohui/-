@@ -15,6 +15,7 @@
 #import "PictureModel.h"
 #import "VideoCateTableViewController.h"
 #import "JXHPhotoBrowerController.h"
+#import "WKWebViewController.h"
 
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate,SDCycleScrollViewDelegate,MWPhotoBrowserDelegate>
 
@@ -334,7 +335,7 @@
 //    
 //    }
         else{
-        WebViewController *viewComntroller=[[WebViewController alloc]init];
+        WKWebViewController *viewComntroller=[[WKWebViewController alloc]init];
         viewComntroller.webStr=model.docid;
         viewComntroller.hidesBottomBarWhenPushed=YES;
         [self.navigationController pushViewController:viewComntroller animated:YES];

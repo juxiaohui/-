@@ -182,6 +182,7 @@
 		6AF1D1CB1CA4D12800F29533 /* ZFPlayerSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1D1C31CA4D12800F29533 /* ZFPlayerSingleton.m */; };
 		6AF1D1CC1CA4D12800F29533 /* ZFPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1D1C51CA4D12800F29533 /* ZFPlayerView.m */; };
 		6AF1D1CD1CA4D12800F29533 /* ZFPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF1D1C61CA4D12800F29533 /* ZFPlayerView.xib */; };
+		B38D09D81D3CAFC400F76907 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38D09D71D3CAFC400F76907 /* WKWebViewController.m */; };
 		EAC7F94B08262587B6A7B280 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0419A9CD2302CB51BADA6F5E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -496,6 +497,8 @@
 		6AF1D1C51CA4D12800F29533 /* ZFPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerView.m; sourceTree = "<group>"; };
 		6AF1D1C61CA4D12800F29533 /* ZFPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFPlayerView.xib; sourceTree = "<group>"; };
 		754B1DF6A84289293792963E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B38D09D61D3CAFC400F76907 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		B38D09D71D3CAFC400F76907 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		EDD57EF2DFC67EB2B5121ED9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -898,6 +901,8 @@
 		6AC944FE1C3FC27000AF5F48 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B38D09D61D3CAFC400F76907 /* WKWebViewController.h */,
+				B38D09D71D3CAFC400F76907 /* WKWebViewController.m */,
 				6AC945171C3FC3DC00AF5F48 /* JXHTabBarViewController.h */,
 				6AC945181C3FC3DC00AF5F48 /* JXHTabBarViewController.m */,
 				6A6ABF481C4C81090003484F /* WebViewController.h */,
@@ -1534,6 +1539,7 @@
 				6A02AF0D1C51FA7D0097ED09 /* PSTCollectionViewFlowLayout.m in Sources */,
 				6AC944C81C3FBF9D00AF5F48 /* main.m in Sources */,
 				6A3200021C9A52D800B97A58 /* UIImage+borderImage.m in Sources */,
+				B38D09D81D3CAFC400F76907 /* WKWebViewController.m in Sources */,
 				6A7963271C48CE3F00E32CCC /* ReadOneTwoTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
